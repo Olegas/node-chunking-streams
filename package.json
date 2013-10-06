@@ -1,0 +1,33 @@
+{
+   "name": "chunking-streams",
+   "version": "0.1.0",
+   "description": "NodeJS chunking streams",
+   "main": "index.js",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/Olegas/node-chunking-streams"
+   },
+   "keywords": [
+      "stream",
+      "chunking",
+      "s3",
+      "gzip"
+   ],
+   "devDependencies": {
+      "istanbul": "0.1.44",
+      "mocha-istanbul": "0.2.0",
+      "coveralls": "2.3.0",
+      "assert": "0.4.9",
+      "mocha": "1.13.0"
+   },
+   "scripts": {
+      "instrument": "node ./node_modules/.bin/istanbul instrument --output lib-cov --no-compact --variable global.__coverage__ lib",
+      "test-cov": "npm run-script instrument && COVER=CHUNKING ISTANBUL_REPORTERS=lcovonly node ./node_modules/.bin/mocha -R mocha-istanbul",
+      "test": "node ./node_modules/mocha/bin/mocha -R spec"
+   },
+   "author": "Oleg Elifantiev <oleg@elifantiev.ru>",
+   "license": "MIT",
+   "engines": {
+      "node": ">=0.10"
+   }
+}
