@@ -1,4 +1,4 @@
-var libPath = process.env('COVER') == 'CHUNKING' ? '/lib-cov' : '/lib';
+var libPath = process.env.COVER == 'CHUNKING' ? '/lib-cov' : '/lib';
 
 module.exports = {
    Chunker: require(libPath + '/chunker'),
