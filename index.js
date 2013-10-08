@@ -4,5 +4,6 @@ module.exports = {
    Chunker: require(libPath + '/chunker'),
    LineCounter: require(libPath + '/line-counter'),
    GZipChunker: require(libPath + '/gzip-chunker'),
-   S3MultipartUploader: require(libPath + '/s3-multipart')
+   S3MultipartUploader: require(libPath + '/s3-multipart'),
+   SeparatorChunker: require(libPath + '/separator-chunker.js')
 };
