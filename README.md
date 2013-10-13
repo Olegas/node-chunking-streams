@@ -1,7 +1,7 @@
 node-chunking-streams
 =====================
 
-[![Build Status](https://travis-ci.org/Olegas/node-chunking-streams.png)](https://travis-ci.org/Olegas/node-chunking-streams)
+[![Build Status](https://travis-ci.org/Olegas/node-chunking-streams.png?branch=master)](https://travis-ci.org/Olegas/node-chunking-streams)
 [![Coverage Status](https://coveralls.io/repos/Olegas/node-chunking-streams/badge.png)](https://coveralls.io/r/Olegas/node-chunking-streams)
 [![NPM version](https://badge.fury.io/js/node-chunking-streams.png)](http://badge.fury.io/js/node-chunking-streams)
 [![Dependency Status](https://gemnasium.com/Olegas/node-chunking-streams.png)](https://gemnasium.com/Olegas/node-chunking-streams)
