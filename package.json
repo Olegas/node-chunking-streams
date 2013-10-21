@@ -1,6 +1,6 @@
 {
    "name": "chunking-streams",
-   "version": "0.0.2",
+   "version": "0.0.3",
    "description": "NodeJS chunking streams",
    "main": "index.js",
    "repository": {
