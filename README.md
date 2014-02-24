@@ -91,8 +91,8 @@ chunker.on('chunkEnd', function(id, done) {
     done();
 });
 
-chunker.on('data', function(data) {
-    output.write(data.chunk);
+chunker.on('data', function(chunk) {
+    output.write(chunk.data);
 });
 
 input.pipe(chunker);
