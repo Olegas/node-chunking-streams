@@ -49,10 +49,10 @@ new SeparatorChunker({
 SizeChunker
 -----------
 
-Split streams into chunks having at least specified size in bytes (but maybe more). It is **object mode** stream!
+Split streams into chunks having exactly specified number of bytes. It is **object mode** stream!
 Each data chunk is an object with the following fields:
 
-  - id: number of chunk (starts from 1)
+  - id: number of chunk (starts from 0)
   - data: `Buffer` with data
 
 SizeChunker has 2 additional events:
@@ -65,11 +65,14 @@ Both event handlers must accept two arguments:
   - id: number of chunk
   - done: callback function, **must** be called then processing is completed
 
+If some tail data is not fit fully into specified chunk size, it can be emitted at the end if `flushTail` flag is set.
+
 ### Configuration
 
 ```javascript
 new SizeChunker({
-    chunkSize: 1024 // must be a number greater than zero
+    chunkSize: 1024 // must be a number greater than zero.
+    flushTail: true // flush or not remainder of an incoming stream. Defaults to false
 });
 ```
 
@@ -97,3 +100,7 @@ chunker.on('data', function(chunk) {
 
 input.pipe(chunker);
 ```
+
+### S3MultipartUploader
+
+**INCOMPLETE**
