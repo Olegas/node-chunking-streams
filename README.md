@@ -18,7 +18,7 @@ A set of Node.js streams to process data in chunks
 LineCounter
 -----------
 
-Simple transform stream which counts lines (`\n` is a separator) and emit data chunks contains exactly specified number
+Simple `TransformStream` which counts lines (`\n` is a separator) and emit data chunks contains exactly specified number
  of them.
 
 ### Configuration
