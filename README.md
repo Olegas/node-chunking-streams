@@ -14,6 +14,25 @@ A set of Node.js streams to process data in chunks
  1. GzipChunker
  1. S3MultipartUploader
 
+To intstall with NPM
+
+```
+npm install chunking-streams
+```
+
+To use with Node.JS
+
+```javascript
+
+var chunkingStreams = require('chunking-streams');
+
+var LineCounter = chunkingStreams.LineCounter;
+var SeparatorChunker = chunkingStreams.SeparatorChunker;
+var SizeChunker = chunkingStreams.SizeChunker;
+
+// ad so on...
+```
+
 
 LineCounter
 -----------
