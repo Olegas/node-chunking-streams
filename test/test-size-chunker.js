@@ -1,5 +1,5 @@
 var lib = require('..'),
-   Chunker = lib.Chunker,
+   Chunker = lib.SizeChunker,
    assert = require('assert');
 
 describe('SizeChunker', function () {
