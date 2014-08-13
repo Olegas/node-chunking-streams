@@ -5,7 +5,8 @@ module.exports = {
    LineCounter: require(libPath + '/line-counter'),
    GZipChunker: require(libPath + '/gzip-chunker'),
    S3MultipartUploader: require(libPath + '/s3-multipart'),
-   SeparatorChunker: require(libPath + '/separator-chunker.js')
+   SeparatorChunker: require(libPath + '/separator-chunker'),
+   FilterStream: require(libPath + '/filter')
 };
 
 // To be deprecated
