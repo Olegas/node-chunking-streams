@@ -14,11 +14,11 @@
       "gzip"
    ],
    "devDependencies": {
-      "istanbul": "0.1.44",
-      "mocha-istanbul": "0.2.0",
-      "coveralls": "2.3.0",
-      "assert": "0.4.9",
-      "mocha": "1.13.0"
+      "istanbul": "0.4.5",
+      "mocha-istanbul": "0.3.0",
+      "coveralls": "2.11.14",
+      "assert": "1.4.1",
+      "mocha": "3.1.2"
    },
    "scripts": {
       "instrument": "node ./node_modules/.bin/istanbul instrument --output lib-cov --no-compact --variable global.__coverage__ lib",
