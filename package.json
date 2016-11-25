@@ -18,7 +18,7 @@
       "mocha-istanbul": "0.3.0",
       "coveralls": "2.11.15",
       "assert": "1.4.1",
-      "mocha": "3.1.2"
+      "mocha": "3.2.0"
    },
    "scripts": {
       "instrument": "node ./node_modules/.bin/istanbul instrument --output lib-cov --no-compact --variable global.__coverage__ lib",
